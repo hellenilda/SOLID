@@ -1,6 +1,6 @@
 package org.example.exercicio3;
 
-public class Humano implements Funcionario{
+public class Humano implements FuncionarioQueCome{
     @Override
     public void trabalhar() {
         // Lógica de trabalhar

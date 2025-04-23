@@ -7,9 +7,4 @@ public class Robo implements Funcionario {
     public void trabalhar() {
         // Lógica de trabalhar
     }
-
-    @Override
-    public void comer() {
-        throw new UnsupportedOperationException("Robôs não comem!");
-    }
 }

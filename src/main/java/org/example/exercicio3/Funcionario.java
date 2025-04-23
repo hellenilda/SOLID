@@ -6,5 +6,4 @@ public interface Funcionario {
 
     void trabalhar();
 
-    void comer();
 }
