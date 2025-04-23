@@ -1,17 +1,20 @@
 package org.example.exercicio2;
 
-//Refatore o código para que siga o Princípio Aberto/Fechado
+// Princípio Aberto/Fechado
 
 public class CalculadoraDeDesconto {
 
-    public double calculateDiscount(String tipoCliente) {
-        if (tipoCliente.equals("Regular")) {
-                return 0.1;
-        } else if (tipoCliente.equals("VIP")) {
-            return 0.2;
-        }
-            return 0;
-        }
+    protected double desconto;
+    private VIP clienteVip;
+    private Regular clienteRegular;
 
+    public double calculateDiscount(String tipoCliente) {
+        if (tipoCliente.equals("VIP")) {
+            return this.desconto = clienteVip.desconto();
+        } else if (tipoCliente.equals("Regular")) {
+            return this.desconto = clienteRegular.desconto();
+        }
+        return 0;
+    }
 
 }
